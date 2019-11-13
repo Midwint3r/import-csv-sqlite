@@ -1,0 +1,14 @@
+DEBUG:root:this message should go to the log file
+INFO:root:so should this
+WARNING:root:and this,too
+INFO:root:so should this
+WARNING:root:and this,too
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:Finished
+INFO:Started
+INFO:Doing something
+INFO:Finished
+2019-11-04 16:53:22,981:Started
+2019-11-04 16:53:22,981:Doing something
+2019-11-04 16:53:22,981:Finished
