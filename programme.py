@@ -43,7 +43,7 @@ with open(path_csv,newline='') as csvfile:
     lecteur = csv.DictReader(csvfile, delimiter=';')
     for line_content in lecteur:
         cursor.execute("SELECT * FROM automobile",line_content)
-        cursor.executemany("INSERT INTO automobile VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",line_content)
+        cursor.executemany("INSERT INTO automobile(adresse_titulaire,nom,prenom,immatriculation,date_immatriculation,vin,marque,denomination_commerciale,couleur,carosserie,categorie,cylindree,energie,places,poids,puissance,type,variante,version) VALUES(:adresse_titulaire,:nom,:prenom,:immatriculation,:date_immatriculation,:vin,:marque,:denomination_commerciale,:couleur,:carosserie,:categorie,:cylindree,:energie,:places,:poids,:puissance,:type,:variante,:version);",line_content)
         connection.commit()
         
 connection.close()
