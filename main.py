@@ -23,8 +23,7 @@ def verifdb(fichier_sqlite):
     if not os.path.exists(fichier_sqlite):
         logging.debug('La base de données %s est inexistante, création d''une nouvelle base de données' % fichier_sqlite)
     else:
-        logging.error('Base de données deja existant, fermeture du programme')
-        exit(1)
+        logging.debug('Base de données deja existant, Mise à jour de celle-ci')
         
         
 
@@ -34,9 +33,9 @@ def veriflog(fichier_log):
     else:
         logging.debug('le fichier de log inexistant, creation de celui-ci')
 
-
-logging.info("Creation de la table")
+   
 def createtab(cursor):
+    logging.info("Creation de la table") 
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS automobile(
             adresse_titulaire text,
@@ -44,7 +43,7 @@ def createtab(cursor):
             prenom text,
             immatriculation text,
             date_immatriculation text,
-            vin bigint,                    
+            vin int,                    
             marque text,
             denomination_commerciale text,
             couleur text,
@@ -58,7 +57,7 @@ def createtab(cursor):
             type text,
             variante text,
             version int
-            );
+            )
         ''')
     connection.commit()
 
@@ -67,7 +66,14 @@ def insertion_bdd(cursor,path_csv):
     with open(path_csv) as csvfile:
         lecteur = csv.DictReader(csvfile, delimiter=';')
         import_db =         [(row['adresse_titulaire'],row['nom'],row['prenom'],row['immatriculation'],row['date_immatriculation'],row['vin'] ,row['marque'] ,row['denomination_commerciale'] ,row['couleur'] ,row['carroserie'],row['categorie'] ,row['cylindree'] ,row['energie'] ,row['places'],row['poids'],row['puissance'],row['type'] ,row['variante'] ,row['version'] ) for row in lecteur]
-    cursor.executemany("INSERT INTO automobile (adresse_titulaire,nom,prenom,immatriculation,date_immatriculation,vin,marque,denomination_commerciale,couleur,carroserie,categorie,cylindree,energie,places,poids,puissance,type,variante,version) VALUES (?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", import_db)
+    insert = False
+    try:
+        cursor.executemany("INSERT INTO automobile (adresse_titulaire,nom,prenom,immatriculation,date_immatriculation,vin,marque,denomination_commerciale,couleur,carroserie,categorie,cylindree,energie,places,poids,puissance,type,variante,version) VALUES (?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", import_db)
+        insert = True
+    finally:
+        if insert == False:
+            cursor.executemany("UPDATE automobile SET adresse_titulaire = ?,nom = ?,prenom = ?,immatriculation = ?,date_immatriculation = ?,vin = ?,marque = ?,denomination_commerciale = ?,couleur = ?,carroserie = ?,categorie = ?,cylindree = ?,energie = ?,places = ?,poids = ?,puissance = ?,type = ?,variante = ?,version = ? WHERE immatriculation = ?", import_db)
+    
 
 
 
@@ -77,7 +83,7 @@ def insertion_bdd(cursor,path_csv):
 
 if __name__ =='__main__':
     
-    logging.basicConfig(format ='%(asctime)s : %(levelname)s : %(message)s',filename='logs.log',filemode='w',level=logging.INFO)
+    logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', filename='logs.log', level=logging.DEBUG)
     logging.debug('Debut programme')
     verifcsv(path_csv)
     verifdb(path_db)
