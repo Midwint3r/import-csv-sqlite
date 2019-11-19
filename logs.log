@@ -46,3 +46,15 @@
 2019-11-19 14:11:49,191:DEBUG:le fichier de log deja existant
 2019-11-19 14:11:49,191:DEBUG:Connection a la base de données
 2019-11-19 14:11:49,191:INFO:Creation de la table
+2019-11-19 21:43:08,657:DEBUG:Debut programme
+2019-11-19 21:43:08,659:DEBUG:Fichier CSV valide
+2019-11-19 21:43:08,659:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-19 21:43:08,659:DEBUG:le fichier de log deja existant
+2019-11-19 21:43:08,659:DEBUG:Connection a la base de données
+2019-11-19 21:43:08,662:INFO:Creation de la table
+2019-11-19 21:43:26,962:DEBUG:Debut programme
+2019-11-19 21:43:26,962:DEBUG:Fichier CSV valide
+2019-11-19 21:43:26,962:DEBUG:La base de données ./database.sqlite3 est inexistante, création dune nouvelle base de données
+2019-11-19 21:43:26,962:DEBUG:le fichier de log deja existant
+2019-11-19 21:43:26,962:DEBUG:Connection a la base de données
+2019-11-19 21:43:26,962:INFO:Creation de la table

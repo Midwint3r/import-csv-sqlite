@@ -1,9 +1,7 @@
 import sqlite3
 import logging
 import csv
-import sys
 import os
-from datetime import datetime
 
 
 
@@ -24,7 +22,6 @@ def verifdb(fichier_sqlite):
         logging.debug('La base de données %s est inexistante, création d''une nouvelle base de données' % fichier_sqlite)
     else:
         logging.debug('Base de données deja existant, Mise à jour de celle-ci')
-        
         
 
 def veriflog(fichier_log):
