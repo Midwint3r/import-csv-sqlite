@@ -58,3 +58,107 @@
 2019-11-19 21:43:26,962:DEBUG:le fichier de log deja existant
 2019-11-19 21:43:26,962:DEBUG:Connection a la base de données
 2019-11-19 21:43:26,962:INFO:Creation de la table
+2019-11-28 15:42:08,106:DEBUG:Debut programme
+2019-11-28 15:42:08,106:DEBUG:Fichier CSV valide
+2019-11-28 15:42:08,106:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 15:42:08,106:DEBUG:le fichier de log deja existant
+2019-11-28 15:42:08,106:DEBUG:Connection a la base de données
+2019-11-28 15:42:08,106:INFO:Creation de la table
+2019-11-28 15:52:28,807:DEBUG:Debut programme
+2019-11-28 15:52:28,807:DEBUG:Fichier CSV valide
+2019-11-28 15:52:28,807:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 15:52:28,808:DEBUG:le fichier de log deja existant
+2019-11-28 15:52:28,808:DEBUG:Connection a la base de données
+2019-11-28 15:52:28,808:INFO:Creation de la table
+2019-11-28 15:52:56,843:DEBUG:Debut programme
+2019-11-28 15:52:56,843:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 16:04:39,138:DEBUG:Debut programme
+2019-11-28 16:04:39,139:ERROR:Nombre darguments incorrect
+2019-11-28 16:06:47,031:DEBUG:Debut programme
+2019-11-28 16:06:47,031:ERROR:Nombre darguments incorrect
+2019-11-28 16:07:48,578:DEBUG:Debut programme
+2019-11-28 16:07:48,578:DEBUG:Fichier CSV valide
+2019-11-28 16:07:48,578:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 16:07:48,578:DEBUG:le fichier de log deja existant
+2019-11-28 16:07:48,578:DEBUG:Connection a la base de données
+2019-11-28 16:07:48,578:INFO:Creation de la table
+2019-11-28 16:07:59,155:DEBUG:Debut programme
+2019-11-28 16:07:59,155:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 16:09:49,441:DEBUG:Debut programme
+2019-11-28 16:09:49,441:ERROR:Nombre darguments incorrect
+2019-11-28 16:11:00,886:DEBUG:Debut programme
+2019-11-28 16:11:00,886:ERROR:Nombre darguments incorrect
+2019-11-28 16:11:56,462:DEBUG:Debut programme
+2019-11-28 16:11:56,462:ERROR:Nombre darguments incorrect
+2019-11-28 16:11:59,691:DEBUG:Debut programme
+2019-11-28 16:11:59,691:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 16:12:21,588:DEBUG:Debut programme
+2019-11-28 16:12:21,588:ERROR:Nombre darguments incorrect
+2019-11-28 16:16:38,714:DEBUG:Debut programme
+2019-11-28 16:16:38,714:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 16:16:59,593:DEBUG:Debut programme
+2019-11-28 16:16:59,593:ERROR:Nombre darguments incorrect
+2019-11-28 16:17:02,749:DEBUG:Debut programme
+2019-11-28 16:17:02,749:ERROR:Nombre darguments incorrect
+2019-11-28 16:17:31,501:DEBUG:Debut programme
+2019-11-28 16:17:31,501:DEBUG:Fichier CSV valide
+2019-11-28 16:17:31,501:DEBUG:La base de données base.sqlite3 est inexistante, création dune nouvelle base de données
+2019-11-28 16:17:31,501:DEBUG:le fichier de log deja existant
+2019-11-28 16:17:31,501:DEBUG:Connection a la base de données
+2019-11-28 16:17:31,501:INFO:Creation de la table
+2019-11-28 16:17:43,460:DEBUG:Debut programme
+2019-11-28 16:17:43,460:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 16:19:39,178:DEBUG:Debut programme
+2019-11-28 16:19:39,178:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 17:14:14,063:DEBUG:Debut programme
+2019-11-28 17:14:14,063:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 17:14:20,021:DEBUG:Debut programme
+2019-11-28 17:14:20,022:DEBUG:Fichier CSV valide
+2019-11-28 17:14:20,022:DEBUG:La base de données base.sqlite3 est inexistante, création dune nouvelle base de données
+2019-11-28 17:14:20,022:DEBUG:le fichier de log deja existant
+2019-11-28 17:14:20,022:DEBUG:Connection a la base de données
+2019-11-28 17:14:20,022:INFO:Creation de la table
+2019-11-28 17:14:54,455:DEBUG:Debut programme
+2019-11-28 17:14:54,455:DEBUG:Fichier CSV valide
+2019-11-28 17:14:54,455:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 17:14:54,455:DEBUG:le fichier de log deja existant
+2019-11-28 17:14:54,455:DEBUG:Connection a la base de données
+2019-11-28 17:14:54,456:INFO:Creation de la table
+2019-11-28 17:15:29,088:DEBUG:Debut programme
+2019-11-28 17:15:29,088:DEBUG:Fichier CSV valide
+2019-11-28 17:15:29,088:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 17:15:29,088:DEBUG:le fichier de log deja existant
+2019-11-28 17:15:29,088:DEBUG:Connection a la base de données
+2019-11-28 17:15:29,088:INFO:Creation de la table
+2019-11-28 17:15:44,340:DEBUG:Debut programme
+2019-11-28 17:15:44,340:DEBUG:Fichier CSV valide
+2019-11-28 17:15:44,340:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 17:15:44,340:DEBUG:le fichier de log deja existant
+2019-11-28 17:15:44,340:DEBUG:Connection a la base de données
+2019-11-28 17:15:44,340:INFO:Creation de la table
+2019-11-28 17:18:34,148:DEBUG:Debut programme
+2019-11-28 17:18:43,608:DEBUG:Debut programme
+2019-11-28 17:18:53,453:DEBUG:Debut programme
+2019-11-28 17:18:53,454:DEBUG:Fichier CSV valide
+2019-11-28 17:18:53,454:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 17:18:53,454:DEBUG:le fichier de log deja existant
+2019-11-28 17:18:53,454:DEBUG:Connection a la base de données
+2019-11-28 17:18:53,454:INFO:Creation de la table
+2019-11-28 17:19:01,030:DEBUG:Debut programme
+2019-11-28 17:19:01,030:ERROR:Nombre darguments incorrect
+2019-11-28 17:24:43,696:DEBUG:Debut programme
+2019-11-28 17:24:43,696:ERROR:Nombre darguments incorrect
+2019-11-28 17:25:00,068:DEBUG:Debut programme
+2019-11-28 17:25:00,069:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 17:26:09,893:DEBUG:Debut programme
+2019-11-28 17:26:09,894:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 17:26:22,047:DEBUG:Debut programme
+2019-11-28 17:30:32,710:DEBUG:Debut programme
+2019-11-28 17:30:35,543:DEBUG:Debut programme
+2019-11-28 17:30:35,544:ERROR:Fichier CSV inexistant, fermeture du programme
+2019-11-28 17:30:39,816:DEBUG:Debut programme
+2019-11-28 17:30:39,817:DEBUG:Fichier CSV valide
+2019-11-28 17:30:39,817:DEBUG:Base de données deja existant, Mise à jour de celle-ci
+2019-11-28 17:30:39,817:DEBUG:le fichier de log deja existant
+2019-11-28 17:30:39,817:DEBUG:Connection a la base de données
+2019-11-28 17:30:39,817:INFO:Creation de la table

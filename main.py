@@ -2,21 +2,34 @@ import sqlite3
 import logging
 import csv
 import os
+import sys
+import argparse
+
+def verifarg():
+    
+    #controle des arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("csv", help="inserez le nom du fichier csv suivi de l'extension",type=str)
+    parser.add_argument("sqlite", help="inserez le nom de la base de données suivi de l'extension",type=str)
+    args = parser.parse_args()
+    path_log=("./logs.log")
+    return args.csv,args.sqlite,path_log
+        
 
 
 
-path_csv=("./data.csv")
-path_db=("./database.sqlite3")
-path_log=("./logs.log")
 
+#fonction de verification des fihiers
+#verifie si le fichier csv existe, si ce n'est pas le cas le programme ne peux pas fonctionner donc on le ferme
 def verifcsv(fichier_csv):   
-    if not os.path.exists(fichier_csv):
+    if (os.path.exists(fichier_csv) == False | os.path.isfile(fichier_csv) == False):
         logging.error('Fichier CSV inexistant, fermeture du programme')
+        print("fichier csv inexistant")
         exit(1)
     else:
         logging.debug('Fichier CSV valide')
 
-
+#verifie si la base de donnée existe, si ce n'est pas le cas elle sera crée avec le nom passée en argument.
 def verifdb(fichier_sqlite):
     if not os.path.exists(fichier_sqlite):
         logging.debug('La base de données %s est inexistante, création d''une nouvelle base de données' % fichier_sqlite)
@@ -30,7 +43,12 @@ def veriflog(fichier_log):
     else:
         logging.debug('le fichier de log inexistant, creation de celui-ci')
 
-   
+
+    
+
+
+
+#fonction permettant de creer la table   
 def createtab(cursor):
     logging.info("Creation de la table") 
     cursor.execute('''
@@ -58,7 +76,7 @@ def createtab(cursor):
         ''')
     connection.commit()
 
-
+#fonction permettant d'inserer les données du fichier dans la base de donnée
 def insertion_bdd(cursor,path_csv):
     with open(path_csv) as csvfile:
         lecteur = csv.DictReader(csvfile, delimiter=';')
@@ -82,6 +100,9 @@ if __name__ =='__main__':
     
     logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', filename='logs.log', level=logging.DEBUG)
     logging.debug('Debut programme')
+    
+    path_csv,path_db,path_log = verifarg()
+    
     verifcsv(path_csv)
     verifdb(path_db)
     veriflog(path_log)
